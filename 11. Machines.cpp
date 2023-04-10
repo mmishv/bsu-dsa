@@ -1,7 +1,6 @@
 #include <iostream>
 #include <algorithm>
 #include <queue>
-#include <ctime>
 #include <vector>
 #include <fstream>
 using namespace std;
@@ -177,7 +176,6 @@ ll dichtomy() {
 }
 
 int main() {
-	//auto t = clock();
 	ifstream inputFile("input.in", ios_base::in);
 	ofstream outputFile("output.out", ios_base::out);
 	inputFile >> n;
@@ -199,6 +197,5 @@ int main() {
 	for (auto i = 0; i < n - 1; i++)
 		outputFile << matching[i] + 1 << " ";
 	outputFile << matching[n - 1] + 1;
-	//cout << '\n' << 1.0 * (clock() - t) / CLOCKS_PER_SEC << endl;
 	return 0;
 }
