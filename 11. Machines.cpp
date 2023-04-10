@@ -110,7 +110,7 @@ bool is_real_to_build() {
 	return true;
 }
 
-int get_u_v_way_dfs(int perf, int u, int v) {
+int get_u_v_way_bfs(int perf, int u, int v) {
 	visited.assign(2 * n, false);
 	visited[u] = true;
 	queue<int> queue;
